@@ -1,0 +1,51 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-10T20:12:40.889Z",
+  "summary": "Core romantic single-page UI appears to be implemented in `frontend/src/App.tsx` with a warm theme (`frontend/src/index.css`) and at least two interactions (Collapsible + Dialog). However, the required generated image assets are not present in the diff, and several unrequested/auth-related and backend files were added despite being out of scope / non-goals.",
+  "missing_requirements": [
+    {
+      "id": "REQ-5",
+      "requirement": "Add the required generated images as static assets under frontend/public/assets/generated and render them in the page.",
+      "reason": "The UI references `/assets/generated/...png` paths, but no files under `frontend/public/assets/generated` are shown as added in the diff summary, so the required images themselves are not evidenced as present.",
+      "evidence": [
+        "frontend/src/App.tsx (references: /assets/generated/romantic-bg.dim_1920x1080.png and /assets/generated/heart-icons.dim_256x256.png)",
+        "ADDED FILES list (no frontend/public/assets/generated/* present)"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added/implemented Internet Identity authentication context and actor recreation logic, despite authentication/user accounts being a non-goal and not required for this romantic page.",
+      "reason": "BuildRequest explicitly lists Internet Identity authentication/user accounts as non-goals and states interactions should not require login/backend calls, yet new II provider/hook files and actor logic were added and wired into the app entry.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx (wraps app in InternetIdentityProvider)"
+      ]
+    },
+    {
+      "description": "Added backend canister file even though the request states no backend work is required and to avoid extra backend services.",
+      "reason": "A new backend file was introduced (`actor {}`) despite the request indicating no backend work is required for this change.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "confidence": 0.76,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

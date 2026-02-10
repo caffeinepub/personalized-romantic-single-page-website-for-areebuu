@@ -1,2 +1,3 @@
-# personalized-romantic-single-page-website-for-areebuu
-Exported from Caffeine project: Personalized romantic single-page website for Areebuu
+## Personalized romantic single-page website for Areebuu
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

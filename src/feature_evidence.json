@@ -1,0 +1,96 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-single-page-romantic-website-experience-addressed-to-the-girlfriend-named-areebuu-prominently-featuring-the-nicknames-areebuu-linnuu-cutie-potato-and-kuchhuu-puchhu-and-include-a-sweet-apology-style-message-in-english",
+      "featureTitle": "Create a single-page romantic website experience addressed to the girlfriend named “Areebuu”, prominently featuring the nicknames: “Areebuu”, “Linnuu”, “cutie potato”, and “kuchhuu puchhu”, and include a sweet apology-style message in English.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-at-least-two-lightweight-interactive-elements-that-make-the-page-feel-special-e-g-a-reveal-a-message-interaction-a-reasons-i-love-you-card-carousel-a-tap-for-a-surprise-animation-or-a-forgive-me-choice-that-results-in-a-friendly-outcome-either-way",
+      "featureTitle": "Implement at least two lightweight interactive elements that make the page feel “special” (e.g., a “Reveal a message” interaction, a “Reasons I love you” card carousel, a “Tap for a surprise” animation, or a “Forgive me?” choice that results in a friendly outcome either way).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-one-coherent-distinctive-visual-theme-for-the-page-colors-typography-spacing-and-component-style-and-apply-it-consistently-across-all-sections-avoid-a-default-unstyled-look-do-not-use-a-blue-purple-theme",
+      "featureTitle": "Add one coherent, distinctive visual theme for the page (colors, typography, spacing, and component style) and apply it consistently across all sections; avoid a default/unstyled look. Do not use a blue/purple theme.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-simple-sectioned-layout-suitable-for-a-single-page-romantic-site-such-as-hero-name-headline-message-section-little-things-i-love-about-you-section-and-a-closing-section-with-a-call-to-action-e-g-can-we-talk-i-want-to-make-it-right",
+      "featureTitle": "Create a simple sectioned layout suitable for a single-page romantic site, such as: Hero (name + headline), Message section, “Little things I love about you” section, and a closing section with a call-to-action (e.g., “Can we talk?” / “I want to make it right”).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-required-generated-images-as-static-assets-under-frontend-public-assets-generated-and-render-them-in-the-page-e-g-background-hero-illustration-and-small-decorative-elements-do-not-serve-images-through-the-backend",
+      "featureTitle": "Add the required generated images as static assets under frontend/public/assets/generated and render them in the page (e.g., background/hero illustration and small decorative elements). Do not serve images through the backend.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "frontend/src/index.css": "Global styles with warm romantic OKLCH color palette (rose/peach/cream tones), custom fonts (Playfair Display for headings, Inter for body), and custom animations for floating and fading effects.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color tokens, custom font families, soft shadows, glow effects, and custom animations (fade-in, float, pulse-soft) for the romantic theme.",
+  "frontend/src/App.tsx": "Single-page romantic website for Areebuu featuring hero section with all nicknames, apology message, interactive collapsible secret message, grid of love reasons cards, and dialog-based forgiveness CTA with all required static images.",
+  "frontend/src/hooks/useQueries.ts": "Minimal placeholder file for React Query hooks; no backend queries needed as all interactions are client-side only."
+}

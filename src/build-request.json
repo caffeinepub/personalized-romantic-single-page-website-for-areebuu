@@ -1,0 +1,119 @@
+{
+  "kind": "build_request",
+  "title": "Personalized romantic single-page website for Areebuu",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page romantic website experience addressed to the girlfriend named “Areebuu”, prominently featuring the nicknames: “Areebuu”, “Linnuu”, “cutie potato”, and “kuchhuu puchhu”, and include a sweet apology-style message in English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2",
+          "msg-4"
+        ],
+        "quotes": [
+          "My Gf is angry make something special for her, her name is Areebuu and I call her moslty Areebuu, Linnuu. Cutie potato and kuchhuu puchhu",
+          "Make something special like website page etc"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page content includes the exact strings: “Areebuu”, “Linnuu”, “cutie potato”, and “kuchhuu puchhu”.",
+        "All user-facing text on the page is in English.",
+        "The page reads as a cohesive romantic/special gesture (headline + short message at minimum)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement at least two lightweight interactive elements that make the page feel “special” (e.g., a “Reveal a message” interaction, a “Reasons I love you” card carousel, a “Tap for a surprise” animation, or a “Forgive me?” choice that results in a friendly outcome either way).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make something special like website page etc"
+        ]
+      },
+      "acceptanceCriteria": [
+        "There are at least two distinct interactive UI elements (beyond basic scrolling).",
+        "Interactions work on both desktop and mobile sizes.",
+        "Interactions do not require login or backend calls."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add one coherent, distinctive visual theme for the page (colors, typography, spacing, and component style) and apply it consistently across all sections; avoid a default/unstyled look. Do not use a blue/purple theme.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make something special like website page etc"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page uses a consistent design system (palette + typography + spacing) across the full page.",
+        "The overall theme is not predominantly blue/purple.",
+        "Buttons, cards, and headings share consistent styling."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create a simple sectioned layout suitable for a single-page romantic site, such as: Hero (name + headline), Message section, “Little things I love about you” section, and a closing section with a call-to-action (e.g., “Can we talk?” / “I want to make it right”).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make something special like website page etc"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page contains at least 4 visually distinct sections.",
+        "The hero section includes “Areebuu” in a prominent headline.",
+        "The closing section includes a clear call-to-action element (button/link) that triggers an on-page interaction (modal/scroll/reveal), not external navigation."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add the required generated images as static assets under frontend/public/assets/generated and render them in the page (e.g., background/hero illustration and small decorative elements). Do not serve images through the backend.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make something special like website page etc"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All generated images are placed in frontend/public/assets/generated.",
+        "The page loads and displays the generated images in the UI.",
+        "No backend endpoints are used to fetch or transform the images."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for any user-facing text.",
+    "Frontend must use the existing React + TypeScript + Tailwind + React Query + shadcn setup; compose UI components without editing sources under frontend/src/components/ui.",
+    "Do not modify files under frontend immutablePaths (frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui).",
+    "Respect single-actor backend architecture; do not add extra backend services (no backend work is required for this request)."
+  ],
+  "nonGoals": [
+    "Internet Identity authentication or user accounts.",
+    "Storing messages or analytics on the backend.",
+    "Real-time features (websockets/chat).",
+    "Integrations with third-party APIs/services."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Romantic soft-gradient background with subtle bokeh hearts (romantic-bg.dim_1920x1080.png)",
+      "Cute minimal heart-and-stars hero illustration, pastel style (hero-illustration.dim_1200x800.png)",
+      "Small decorative heart icon set, simple flat style (heart-icons.dim_256x256.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no backend logic.",
+  "feature_evidence.json": "Machine-generated feature evidence mapping features to project files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries of major frontend files for documentation or build reference.",
+  "frontend/index.css": "Tailwind base theme using OKLCH variables for colors and layout across light and dark modes.",
+  "frontend/index.html": "HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Romantic single-page React app with hero text, apology message, interactive reveal, love cards, decorations, and forgiveness dialog.",
+  "frontend/src/hooks/useActor.ts": "React Query hook creating and refreshing a backend actor based on Internet Identity.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context and provider handling Internet Identity auth, login flow, and identity persistence.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder module exporting nothing since no backend queries are used.",
+  "frontend/src/index.css": "Theme-defining Tailwind CSS with warm romantic palette, custom fonts, and utility layers.",
+  "frontend/src/main.tsx": "React root rendering with QueryClient and InternetIdentityProvider wrapping the App.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending typography, colors, animations, and container settings for a themed frontend. Includes custom OKLCH color variables, keyframes, and animations.",
+  "project_state.json": "Tracks project state for a romantic single‑page website, listing features, requirements, image assets, and metadata for ongoing development."
+}

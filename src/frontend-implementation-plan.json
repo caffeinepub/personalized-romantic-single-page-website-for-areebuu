@@ -1,0 +1,107 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Romantic single-page website for Areebuu (React + Tailwind + shadcn/ui)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Write cohesive romantic, apology-style single-page content addressed to “Areebuu” including the required nicknames, in English.",
+      "acceptanceCriteria": [
+        "The page content includes the exact strings: “Areebuu”, “Linnuu”, “cutie potato”, and “kuchhuu puchhu”.",
+        "All user-facing text on the page is in English.",
+        "The page reads as a cohesive romantic/special gesture (headline + short message at minimum)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the single-page React view and author the romantic apology copy in English, prominently including the exact nickname strings “Areebuu”, “Linnuu”, “cutie potato”, and “kuchhuu puchhu”. Use shadcn-ui components (e.g., Button, Card, Dialog) to present the message with consistent styling; verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add at least two lightweight interactive elements that work on desktop and mobile without login/backend calls.",
+      "acceptanceCriteria": [
+        "There are at least two distinct interactive UI elements (beyond basic scrolling).",
+        "Interactions work on both desktop and mobile sizes.",
+        "Interactions do not require login or backend calls."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Implement at least two distinct on-page interactions such as: (1) a “Reveal a message” interaction (collapsible/reveal card) and (2) a “Forgive me?” choice that always results in a kind outcome (e.g., opening a friendly modal). Use shadcn-ui components (e.g., Button + Card for reveal, Dialog for outcomes) and Tailwind animations for a lightweight ‘special’ feel; verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Apply a cohesive, distinctive romantic visual theme (not predominantly blue/purple) across the page.",
+      "acceptanceCriteria": [
+        "The page uses a consistent design system (palette + typography + spacing) across the full page.",
+        "The overall theme is not predominantly blue/purple.",
+        "Buttons, cards, and headings share consistent styling."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Create global styling and Tailwind/shadcn token variables to establish a warm romantic theme (e.g., rose/peach/cream/gold tones, not predominantly blue/purple), consistent typography, spacing, and shared button/card/heading styling across the page."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Align section layouts and shadcn-ui component variants/classes to the new romantic theme (consistent headings, card styling, and button styles) while keeping all user-facing text English; verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build a simple single-page layout with at least 4 distinct sections and an interactive closing CTA.",
+      "acceptanceCriteria": [
+        "The page contains at least 4 visually distinct sections.",
+        "The hero section includes “Areebuu” in a prominent headline.",
+        "The closing section includes a clear call-to-action element (button/link) that triggers an on-page interaction (modal/scroll/reveal), not external navigation."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Structure the page into at least 4 clear sections: Hero (prominent headline including “Areebuu”), Message section, “Little things I love about you” section (cards/list), and a Closing section with a CTA button that triggers an on-page interaction (e.g., opens a shadcn-ui Dialog or scrolls to a reveal section). Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add required generated images as static assets and render them in the UI without backend serving.",
+      "acceptanceCriteria": [
+        "All generated images are placed in frontend/public/assets/generated.",
+        "The page loads and displays the generated images in the UI.",
+        "No backend endpoints are used to fetch or transform the images."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/romantic-bg.dim_1920x1080.png",
+          "operation": "create",
+          "description": "Add the generated static asset image file at frontend/public/assets/generated/romantic-bg.dim_1920x1080.png for the romantic background."
+        },
+        {
+          "path": "frontend/public/assets/generated/hero-illustration.dim_1200x800.png",
+          "operation": "create",
+          "description": "Add the generated static asset image file at frontend/public/assets/generated/hero-illustration.dim_1200x800.png for the hero illustration."
+        },
+        {
+          "path": "frontend/public/assets/generated/heart-icons.dim_256x256.png",
+          "operation": "create",
+          "description": "Add the generated static asset image file at frontend/public/assets/generated/heart-icons.dim_256x256.png to use as small decorative elements."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render the generated images in the page UI: use frontend/public/assets/generated/romantic-bg.dim_1920x1080.png as a background/section backdrop, place frontend/public/assets/generated/hero-illustration.dim_1200x800.png in the hero, and incorporate frontend/public/assets/generated/heart-icons.dim_256x256.png as decorative accents within sections. Ensure images are referenced as static public assets and not fetched/transformed via any backend calls."
+        }
+      ]
+    }
+  ]
+}
